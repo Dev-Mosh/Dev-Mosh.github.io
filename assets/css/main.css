@@ -199,7 +199,8 @@
 			text-decoration: none;
 		}
 		.mov{
-			padding-left: 100px;
+			padding: auto;
+			font-size: 1.15em;
 		}
 		h3{
 			padding-left: 10px;
@@ -463,6 +464,7 @@
 			font-size: 1.35em;
 			font-family: monospace;
 			padding: 0 2em;
+			margin-bottom: 25px;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -553,11 +555,8 @@
 				float: left;
 				font-family: cursive;
 				border: 8px solid rgb(220, 210, 214);
+				margin-right: 15px;
 				
-			}
-			.pad{
-				padding-left: 120px;
-
 			}
 			
 			.drop{
@@ -571,36 +570,51 @@
 			.offa{
 				float: left;
 				border: 8px solid rgb(220, 210, 214);
+				margin-right: 15px;
 			}
 			
 			.Dev{
 				float: right;
 				border: 8px solid rgb(220, 210, 214);
+				margin-left: 15px;
+				margin-bottom: 4px;
 			}
 
-			.ijtema{
+			.header{
 				font-family: monospace;
+				font-size: 1.82em;
 			    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
 				background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
 				background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
 				background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
+				margin-bottom: 10px;
 			}
 
+			.new{
+				font-size: 1.5em;
+			}
+			
 			.para{
 				padding-left: 175px;
 			}
 			
-			.pare{
-				padding-right: 175px;
-			}
-
+			
 			.quote{
-				padding-left: 250px;
+				padding: auto;
+				display: flex;
+				justify-content: flex-end;
 			}
 			.con{
 				background: none;
+			}
+			.mail{
+				background: none;
+			}
+			
+			.nav-menu{
+				font-size: 0.7em;
 			}
 			
 		
