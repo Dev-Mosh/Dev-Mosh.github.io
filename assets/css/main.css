@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600");
 
-/*
-	Snapshot by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
 
 /* Reset */
 
@@ -175,14 +170,13 @@
 
 	}
 	p:hover{
-		background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-			background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
-			background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
-			background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
+			background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: -o-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: -moz-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			text-decoration: none;
-			text-shadow: 1px 1px 2px #000;
+			-webkit-animation: hue 60s infinite linear;
 		
 	}
 
@@ -540,6 +534,7 @@
 					padding: 2em 0 0.1em 0;
 					padding-left: 2em;
 					padding-right: 2em;
+					background: none;
 				}
 
 			}
@@ -583,13 +578,17 @@
 			.header{
 				font-family: monospace;
 				font-size: 1.82em;
-			    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-				background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
-				background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
-				background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
+			    background: -webkit-radial-gradient(left, orange, yellow, green, cyan, blue, violet);
+				background: -o-radial-gradient(right, cyan, violet, green, yellow, blue, orange);
+				background: -moz-radial-gradient(right, yellow, blue, cyan, green, blue, violet);
+				background: radial-gradient( to right, orange, yellow, green, cyan, blue, violet);
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 				margin-bottom: 10px;
+			}
+			.footer{
+				background: none;
+
 			}
 
 			.new{
@@ -616,8 +615,72 @@
 			.nav-menu{
 				font-size: 0.7em;
 			}
+
 			
-		
+			
+		.new, .adv, .p{
+			color: #f35626;
+			background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: -o-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: -moz-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-animation: hue 60s infinite linear;
+		}
+
+		@-webkit-keyframes hue{
+			from{
+					-webkit-filter: hue-rotate(0deg);
+				}
+
+				to{
+					-webkit-filter: hue-rotate(360deg);
+				}
+			
+		}
+
+		#me{
+			font-size: 80px;
+			color: #f35626;
+			background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: -o-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: -moz-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-animation: hue 60s infinite linear;
+			text-align: center;
+			-webkit-animation: glow 1s ease-in-out infinite alternate;
+			-moz-animation: glow 1s ease-in-out infinite alternate; 
+			animation: glow 1s ease-in-out infinite alternate; 
+		}
+
+		#me:hover{
+			animation: 0;
+			color: #f35626;
+			background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: -o-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: -moz-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			background-image: linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-animation: hue 60s infinite linear;
+
+
+		}
+
+
+		@-webkit-keyframes glow{
+			from{
+				text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+			}
+			
+			to{
+				text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 38x #ff4da6;
+			}
+
+		}
 
 			@media screen and (max-width: 480px) {
 
@@ -1175,11 +1238,16 @@
 				}
 
 			}
+			#no{
+				background: none;
+			}
+
 
 		ul.icons {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+
 		}
 
 			ul.icons li {
@@ -1509,7 +1577,7 @@
 /* Menu */
 
 	#nav {
-		background: rgb(220, 210, 214);
+		background: radial-gradient(#b0c4de 30%,  #dda0dd 100%);
 		z-index: 10002;
 		position: relative;
 		width: 4em;
@@ -1584,7 +1652,7 @@
 		height: 75vh;
 		position: relative;
 		background: #000;
-		background-image: url(../../images/banner.jpg);
+		background-image: url(../../images/banner1.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -1648,14 +1716,21 @@
 			font-size: 1.5em;
 			font-family: monospace;
 			margin-bottom: 1.75em;
+			background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+			background: -o-linear-gradient(92deg, #f35626, #feab3a, green, yellow, red, orange);
+			background: -moz-linear-gradient(92deg, #f35626, #feab3a, cyan, green, red, orange);
+			background: linear-gradient( to right, yellow, dodgerblue, orange, violet, cyan);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			text-decoration: none;
 
 		}
 
 		#banner a {
-			background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-			background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
-			background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
-			background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
+			background: -webkit-linear-gradient(92deg, #f35626, #feab3a, green, orange, yellow, red);
+			background: -o-linear-gradient(92deg, #f35626, #feab3a, green, yellow, red, orange);
+			background: -moz-linear-gradient(92deg, #f35626, #feab3a, cyan, green, red, orange);
+			background: linear-gradient( 92deg, #f35626, #feab3a, red, cyan, orange, yellow);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			text-decoration: none;
@@ -1683,9 +1758,16 @@
 
 				#banner p {
 					font-size: 1.25em;
+					background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+					background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
+					background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
+					background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
 				}
 
 		}
+
 
 /* Main */
 
@@ -1726,6 +1808,7 @@
 	#footer {
 		padding: 4em 0 2em 0;
 		background: #f2f2f2;
+
 	}
 
 		#footer .copyright {
