@@ -168,7 +168,7 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		text-shadow: 1px 1px 2px #000;
-		font-family: sans-serif;
+		
 
 		
 
@@ -218,7 +218,6 @@
 
 			h1 {
 				font-size: 1.5em;
-				font-family: segoe script;
 
 
 
@@ -235,14 +234,14 @@
 		background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		font-family: segoe script;
+		
 	}
 
 		@media screen and (max-width: 480px) {
 
 			h2 {
 				font-size: 1.4em;
-				font-family: segoe script;
+				
 			}
 
 		}
@@ -252,22 +251,22 @@
 		font-family: monospace;
 		background: rgb(238,174,202);
 		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-		font-family: segoe script;
+		
 	}
 
 	h4 {
 		font-size: 1.1em;
-		font-family: segoe script;
+		
 	}
 
 	h5 {
 		font-size: 0.9em;
-		font-family: segoe script;
+		
 	}
 
 	h6 {
 		font-size: 0.7em;
-		font-family: segoe script;
+		
 	}
 
 	sub {
@@ -472,7 +471,6 @@
 		button.big,
 		.button.big {
 			font-size: 1.35em;
-			font-family: segoe script;
 			padding: 0 2em;
 			margin-bottom: 25px;
 		}
@@ -501,7 +499,6 @@
 			button,
 			.button {
 				padding: 0;
-				font-family: segoe script;
 			}
 
 		}
@@ -644,7 +641,6 @@
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			-webkit-animation: hue 35s infinite linear;
-			font-family: andalus;
 		}
 
 		@-webkit-keyframes hue{
@@ -1811,7 +1807,7 @@
 			background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			font-family: segoe script;
+			
 			
 		}
 
