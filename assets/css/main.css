@@ -157,8 +157,10 @@
 		font-style: italic;
 	}
 
+
 	p {
 		margin: 0 0 2em 0;
+		font-family: sans-serif;
 		background: -webkit-linear-gradient(left, #020024, #090979, #7ba2c3, #00d4ff, #3f5efb, #fc466b);
 		background: -o-linear-gradient(#020024, #090979, #7ba2c3, #00d4ff, #3f5efb, #fc466b);
 		background: -moz-linear-gradient(#020024, #090979, #7ba2c3, #00d4ff, #3f5efb, #fc466b);
@@ -166,6 +168,8 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		text-shadow: 1px 1px 2px #000;
+		font-family: sans-serif;
+
 		
 
 	}
@@ -180,10 +184,14 @@
 		
 	}
 
+
+	
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
+
 
 
 	}
@@ -210,6 +218,8 @@
 
 			h1 {
 				font-size: 1.5em;
+				font-family: segoe script;
+
 
 
 			}
@@ -225,12 +235,14 @@
 		background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		font-family: segoe script;
 	}
 
 		@media screen and (max-width: 480px) {
 
 			h2 {
 				font-size: 1.4em;
+				font-family: segoe script;
 			}
 
 		}
@@ -240,18 +252,22 @@
 		font-family: monospace;
 		background: rgb(238,174,202);
 		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+		font-family: segoe script;
 	}
 
 	h4 {
 		font-size: 1.1em;
+		font-family: segoe script;
 	}
 
 	h5 {
 		font-size: 0.9em;
+		font-family: segoe script;
 	}
 
 	h6 {
 		font-size: 0.7em;
+		font-family: segoe script;
 	}
 
 	sub {
@@ -456,7 +472,7 @@
 		button.big,
 		.button.big {
 			font-size: 1.35em;
-			font-family: monospace;
+			font-family: segoe script;
 			padding: 0 2em;
 			margin-bottom: 25px;
 		}
@@ -485,6 +501,7 @@
 			button,
 			.button {
 				padding: 0;
+				font-family: segoe script;
 			}
 
 		}
@@ -618,7 +635,7 @@
 
 			
 			
-		.new, .adv, .p{
+		.new, .adv, .p, #me{
 			color: #f35626;
 			background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
 			background-image: -o-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
@@ -626,7 +643,8 @@
 			background-image: linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			-webkit-animation: hue 60s infinite linear;
+			-webkit-animation: hue 35s infinite linear;
+			font-family: andalus;
 		}
 
 		@-webkit-keyframes hue{
@@ -640,22 +658,6 @@
 			
 		}
 
-		#me{
-			font-size: 80px;
-			color: #f35626;
-			background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
-			background-image: -o-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
-			background-image: -moz-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
-			background-image: linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			-webkit-animation: hue 60s infinite linear;
-			text-align: center;
-			-webkit-animation: glow 1s ease-in-out infinite alternate;
-			-moz-animation: glow 1s ease-in-out infinite alternate; 
-			animation: glow 1s ease-in-out infinite alternate; 
-		}
-
 		#me:hover{
 			animation: 0;
 			color: #f35626;
@@ -665,23 +667,110 @@
 			background-image: linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			-webkit-animation: hue 60s infinite linear;
-
+			-webkit-animation: hue 35s infinite linear;
 
 		}
 
 
-		@-webkit-keyframes glow{
-			from{
-				text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+		.bio{
+			-webkit-animation: fadeIn 4s ease-in-out infinite alternate;
+			-moz-animation: fadeIn 4s ease-in-out infinite alternate; 
+			-o-animation: fadeIn 4s ease-in-out infinite alternate; 
+			-ms-animation: fadeIn 4s ease-in-out infinite alternate; 
+			animation: fadeIn 4s ease-in-out infinite alternate; 
+		}
+
+		.bio:hover{
+			animation: 0;
+			}
+
+
+		@keyframes fadeIn{
+			0%{
+				opacity: 0;
 			}
 			
-			to{
-				text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 38x #ff4da6;
+			100%{
+				opacity: 1;
 			}
 
 		}
 
+		@-webkit-keyframes fadeIn{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-o-keyframes fadeIn{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes fadeIn{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		
+
+
+		.bio{
+			-webkit-animation: fadeOut 2s ease-in infinite alternate;
+			-moz-animation: fadeOut 2s ease-in infinite alternate; 
+			-o-animation: fadeOut 2s ease-in infinite alternate; 
+			-ms-animation: fadeOut 2s ease-in infinite alternate; 
+			animation: fadeOut 2s ease-in infinite alternate; 
+		}
+
+		.bio:hover{
+			animation: 0;
+		}
+
+
+		@keyframes fadeOut{
+			0%{
+				opacity: 0;
+			}
+			
+			100%{
+				opacity: 1;
+			}
+
+		}
+
+		@-webkit-keyframes fadeOut{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-o-keyframes fadeOut{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes fadeOut{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
 			@media screen and (max-width: 480px) {
 
 				#contact .column {
@@ -1652,11 +1741,11 @@
 		height: 75vh;
 		position: relative;
 		background: #000;
-		background-image: url(../../images/banner1.jpg);
+		background-image: url(../../images/banner.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: center; 
 		text-align: center;
 		color: #FFF;
 
@@ -1717,23 +1806,23 @@
 			font-family: monospace;
 			margin-bottom: 1.75em;
 			background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-			background: -o-linear-gradient(92deg, #f35626, #feab3a, green, yellow, red, orange);
-			background: -moz-linear-gradient(92deg, #f35626, #feab3a, cyan, green, red, orange);
-			background: linear-gradient( to right, yellow, dodgerblue, orange, violet, cyan);
+			background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
+			background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
+			background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			text-decoration: none;
-
+			font-family: segoe script;
+			
 		}
 
 		#banner a {
-			background: -webkit-linear-gradient(92deg, #f35626, #feab3a, green, orange, yellow, red);
-			background: -o-linear-gradient(92deg, #f35626, #feab3a, green, yellow, red, orange);
-			background: -moz-linear-gradient(92deg, #f35626, #feab3a, cyan, green, red, orange);
-			background: linear-gradient( 92deg, #f35626, #feab3a, red, cyan, orange, yellow);
+			background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+			background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
+			background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
+			background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			text-decoration: none;
+			
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -1754,21 +1843,17 @@
 				#banner h1 {
 					font-size: 2.25em;
 
+
 				}
 
 				#banner p {
 					font-size: 1.25em;
-					background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-					background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
-					background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
-					background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
+					
 				}
 
 		}
 
-
+		
 /* Main */
 
 	#main {
