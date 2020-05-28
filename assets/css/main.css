@@ -138,16 +138,19 @@
 
 		}
 
+
 	a {
 		text-decoration: underline;
-		background-color: rgb(238,174,202);
-		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+		color: inherit;	
+		
 	}
+
 
 		a:hover {
 			text-decoration: none;
-			color: #C337D4;
-		}
+			color: #6495ed;
+	}
+		
 
 	strong, b {
 		font-weight: 700;
@@ -157,9 +160,24 @@
 		font-style: italic;
 	}
 
+		#phrase{
+				background: rgb(238,174,202);
+				background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				font-size: 1.17em;
+
+			}
 
 	p {
 		margin: 0 0 2em 0;
+		color: #000;
+		text-shadow: 0.2px 0.2px 0.4px #000;		
+
+	}
+	
+
+	p:hover{
 		font-family: sans-serif;
 		background: -webkit-linear-gradient(left, #020024, #090979, #7ba2c3, #00d4ff, #3f5efb, #fc466b);
 		background: -o-linear-gradient(#020024, #090979, #7ba2c3, #00d4ff, #3f5efb, #fc466b);
@@ -167,20 +185,8 @@
 		background: linear-gradient( to right, #020024, #090979, #7ba2c3, #00d4ff, #3f5efb, #fc466b);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		text-shadow: 1px 1px 2px #000;
-		
-
-		
-
-	}
-	p:hover{
-			background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
-			background-image: -o-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
-			background-image: -moz-linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
-			background-image: linear-gradient(92deg, #f35626, #feab3a, dodgerblue, orange, violet, indigo, cyan);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			-webkit-animation: hue 60s infinite linear;
+		text-shadow: 0.6px 0.6px 1px #000;	
+		-webkit-animation: hue 60s infinite linear;
 		
 	}
 
@@ -472,7 +478,14 @@
 		.button.big {
 			font-size: 1.35em;
 			padding: 0 2em;
-			margin-bottom: 25px;
+			margin-top: 45px;
+			font-family: monospace;
+		}
+		
+		#full{
+			margin-top: -5px;
+			margin-bottom: 30px;
+
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -499,6 +512,8 @@
 			button,
 			.button {
 				padding: 0;
+				font-family: monospace;
+
 			}
 
 		}
@@ -627,7 +642,7 @@
 			}
 			
 			.nav-menu{
-				font-size: 0.7em;
+				font-size: 0.699em;
 			}
 
 			
@@ -669,11 +684,11 @@
 
 
 		.bio{
-			-webkit-animation: fadeIn 4s ease-in-out infinite alternate;
-			-moz-animation: fadeIn 4s ease-in-out infinite alternate; 
-			-o-animation: fadeIn 4s ease-in-out infinite alternate; 
-			-ms-animation: fadeIn 4s ease-in-out infinite alternate; 
-			animation: fadeIn 4s ease-in-out infinite alternate; 
+			-webkit-animation: fadeIn 5s ease-in-out infinite alternate;
+			-moz-animation: fadeIn 5s ease-in-out infinite alternate; 
+			-o-animation: fadeIn 5s ease-in-out infinite alternate; 
+			-ms-animation: fadeIn 5s ease-in-out infinite alternate; 
+			animation: fadeIn 5s ease-in-out infinite alternate; 
 		}
 
 		.bio:hover{
@@ -720,11 +735,11 @@
 
 
 		.bio{
-			-webkit-animation: fadeOut 2s ease-in infinite alternate;
-			-moz-animation: fadeOut 2s ease-in infinite alternate; 
-			-o-animation: fadeOut 2s ease-in infinite alternate; 
-			-ms-animation: fadeOut 2s ease-in infinite alternate; 
-			animation: fadeOut 2s ease-in infinite alternate; 
+			-webkit-animation: fadeOut 3s ease-in infinite alternate;
+			-moz-animation: fadeOut 3s ease-in infinite alternate; 
+			-o-animation: fadeOut 3s ease-in infinite alternate; 
+			-ms-animation: fadeOut 3s ease-in infinite alternate; 
+			animation: fadeOut 3s ease-in infinite alternate; 
 		}
 
 		.bio:hover{
@@ -767,6 +782,8 @@
 				opacity: 1;
 			}
 		}
+
+
 			@media screen and (max-width: 480px) {
 
 				#contact .column {
@@ -776,6 +793,7 @@
 				}
 
 			}
+			
 
 /* Form */
 
@@ -1149,10 +1167,18 @@
 
 /* Icon */
 
+#tele{
+		text-decoration: none;
+		background: rgb(238,174,202) !important;
+		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) !important;
+			
+		}
+
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+
 	}
 
 		.icon:before {
@@ -1166,7 +1192,9 @@
 
 		.icon > .label {
 			display: none;
+
 		}
+
 
 /* Image */
 
@@ -1312,6 +1340,7 @@
 
 						ul.tabs li .button {
 							width: 100%;
+							font-family: monospace;
 						}
 
 				}
@@ -1662,7 +1691,8 @@
 /* Menu */
 
 	#nav {
-		background: radial-gradient(#b0c4de 30%,  #dda0dd 100%);
+		background: rgb(238,174,202);
+		background: radial-gradient(rgba(148,184,233,1) 0%, rgba(238,177,202,1) 100%);
 		z-index: 10002;
 		position: relative;
 		width: 4em;
@@ -1685,18 +1715,62 @@
 			}
 
 				#nav ul li a {
-					color: rgba(255, 255, 255, 0.5);
+					background: rgb(238,174,202);
+			background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 					text-decoration: none;
 					font-size: 1.5em;
+					background: none;
 				}
 
 					#nav ul li a:hover {
-						color: white;
+						color: #808080;
+						animation: none;
 					}
 
-					#nav ul li a.active {
-						color: #19B5FE;
+					#nav ul li a.active{
+						color: #000;
 					}
+
+					
+
+
+
+					.blink{
+						animation: blink 2s steps(5, start) infinite;
+						-webkit-animation: blink 1s steps(5, start) infinite;
+						-moz-animation: blink 1s steps(5, start) infinite;
+						-o-animation: blink 1s steps(5, start) infinite;
+					}
+
+					@keyframes blink {
+						to{
+							visibility: hidden;
+						}
+					}
+						
+						@-webkit-keyframes blink{
+							to{
+								visibility: hidden;
+
+							}		
+						}
+						
+						@-moz-keyframes blink{
+							to{
+								visibility: hidden;
+
+							}		
+						}
+
+						@-o-keyframes blink{
+							to{
+								visibility: hidden;
+
+							}		
+						}
+						
+
+					
 
 				@media screen and (max-width: 736px) {
 
@@ -1737,7 +1811,7 @@
 		height: 75vh;
 		position: relative;
 		background: #000;
-		background-image: url(../../images/banner.jpg);
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/banner8.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -1789,10 +1863,8 @@
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
-			background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-			background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
-			background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
-			background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
+			background: rgb(238,174,202);
+			background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -1801,23 +1873,18 @@
 			font-size: 1.5em;
 			font-family: monospace;
 			margin-bottom: 1.75em;
-			background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-			background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
-			background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
-			background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			color: #fff;
+			font-family: monospace;
 			
 			
 		}
 
 		#banner a {
-			background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-			background: -o-linear-gradient(right, cyan, violet, green, yellow, blue, orange);
-			background: -moz-linear-gradient(right, yellow, blue, cyan, green, blue, violet);
-			background: linear-gradient( to right, orange, yellow, green, cyan, blue, violet);
+			background: rgb(238,174,202);
+			background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+			font-family: monospace;
 			
 		}
 
@@ -1825,6 +1892,7 @@
 
 			#banner h1 {
 				font-size: 3.5em;
+
 			}
 
 		}
