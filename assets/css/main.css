@@ -256,6 +256,8 @@
 		font-size: 1.35em;
 		font-family: monospace;
 		background: rgb(238,174,202);
+		box-shadow: 0 0 0 0.8px #000;
+		border-radius: 30px;
 		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 		
 	}
@@ -376,9 +378,10 @@
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background: rgb(238,174,202);
+		box-shadow: 0 0 0 0.8px #000;
 		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 		color: black;
-		border-radius: 10px;
+		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
@@ -408,6 +411,7 @@
 			.button.active:hover {
 				color: #FFF;
 				background: #22313F;
+				box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.25);
 			}
 
 		input[type="submit"]:hover,
@@ -417,6 +421,7 @@
 		.button:hover {
 			color: #FFF;
 			background: #22313F;
+			box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.25);
 		}
 
 		input[type="submit"].alt,
@@ -1881,6 +1886,7 @@
 
 		#banner a {
 			background: rgb(238,174,202);
+			box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.25);
 			background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
